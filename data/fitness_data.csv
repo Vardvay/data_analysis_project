@@ -1,4 +1,4 @@
-id,program,frequency_per_week,volume_sets,protein_synthesis_change_pct,strength_gain_pct,testosterone_change_pct,cortisol_change_pct
+id,program,frequency_per_week,volume_sets,protein_synthesis,strength_gain,testosterone_change,cortisol_change
 1,full_body,3,12,27.13,13.48,3.42,-0.35
 2,full_body,3,11,25.18,23.94,2.38,-3.11
 3,push_pull,5,18,42.04,20.77,11.46,-2.52
@@ -499,3 +499,4 @@ id,program,frequency_per_week,volume_sets,protein_synthesis_change_pct,strength_
 498,full_body,3,12,19.73,21.93,5.09,-3.19
 499,upper_lower,4,17,30.77,23.29,8.22,-2.96
 500,upper_lower,4,14,33.63,20.61,7.2,-4.27
+501,split,5,18,40.0,25.0,8.0,-4.0
