@@ -1,18 +1,12 @@
 from src.data_loader import DataLoader
+from src.CLI import run_cli
+import os
 
-loader = DataLoader("data/fitness_data.csv")
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(BASE_DIR, "data", "fitness_data.csv")
+
+loader = DataLoader(file_path)
 df = loader.load_data()
 
-new_record = {
-    "program": "split",
-    "frequency_per_week": 5,
-    "volume_sets": 18,
-    "protein_synthesis": 40,
-    "strength_gain": 25,
-    "testosterone_change": 8,
-    "cortisol_change": -4
-}
-
-loader.add_record(new_record)
-loader.save_data()
+run_cli(df)
